@@ -68,7 +68,11 @@ input:focus::placeholder {
 }
 
 a {
-  color: var(--c3);
+  color: var(--c5)
+}
+
+a.navbar-button {
+  color: var(--c4)
 }
 
 a:hover, .button:hover, input:hover {
@@ -76,7 +80,7 @@ a:hover, .button:hover, input:hover {
   cursor: pointer;
 }
 
-a:active {
+a.navbar-button:active {
   background-color: var(--c3);
 }
 
@@ -154,7 +158,7 @@ code {
 }
 
 ul {
-  list-style-type: "*";
+  list-style-type: "* ";
   list-style-position: inside;
   margin: 0 2ex;
 }
@@ -163,6 +167,17 @@ ol {
   list-style-type: "1";
   list-style-position: inside;
   margin: 0 2ex;
+}
+
+.content-container {
+  margin-top: 1em;
+  margin-left: 2ex;
+  border-top: 1em solid var(--c2);
+  border-bottom: 1em solid var(--c2);
+  border-left: 2ex solid var(--c2);
+  border-right: 2ex solid var(--c2);
+  box-shadow: 2ex 1em var(--shadowdrop);
+  height: 50vh;
 }
 
 @media screen and (orientation: portrait) {
